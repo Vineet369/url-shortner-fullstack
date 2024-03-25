@@ -11,16 +11,20 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>URL Shortener</h1>
+    <% if (locals.id) { %>
+    <p>URL Generated: http://localhost:8001/url/<%= id %></p>
+    <% } %>
+
     <div>
         <form action="/url" method="post">
-            <h1>URL Shortner</h1> 
             <label>Enter original URL</label>
             <input type="text" name="url" placeholder="www.example.com"/>
             <button type="submit">Generate</button>
         </form>
     </div>
     <div>
-        <% if (locals.urls) { %>
+        <% if (locals.urls) { %> 
             <table>
                  
                 <thead>

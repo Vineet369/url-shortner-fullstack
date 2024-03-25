@@ -6,4 +6,4 @@ const userRoute  = express.Router();
 userRoute.post('/',handleUserSignup)
 userRoute.post('/login',handleUserlogin)
 
-module.exports = {userRoute} 
+module.exports = userRoute 
