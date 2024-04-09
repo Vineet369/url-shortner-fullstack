@@ -13,7 +13,7 @@ const userRoute = require('./routes/userLogin.routes.js')
 const app = express();
 const PORT = 8001;
 
-connectToMongoDB('mongodb+srv://bloodbankmanagement:bloodbank@clusterbloodban.7cf1bky.mongodb.net/url-shortner');
+connectToMongoDB('');
  
 app.set("view engine", "ejs")
 app.set("views", path.resolve('./views'))
